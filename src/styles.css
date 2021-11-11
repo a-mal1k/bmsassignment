@@ -1,4 +1,54 @@
-.App {
-  font-family: sans-serif;
-  text-align: center;
+@import url("https://fonts.googleapis.com/css2?family=Irish+Grover&family=Orbitron:wght@900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.container {
+  font-family: "Times New Roman", Times, serif;
+  color: white;
+  margin: 2px;
+}
+.navbar {
+  display: flex;
+  padding: 10px;
+  justify-content: space-between;
+  align-items: center;
+  background: linear-gradient(45deg, rgb(59, 56, 56), rgb(32, 30, 30));
+}
+.left-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.left-nav h1 {
+  color: rgb(46, 170, 170);
+  text-shadow: 3px 3px 3px black;
+  font-family: "Irish Grover", cursive;
+}
+.list {
+  display: flex;
+  margin-left: 20px;
+  list-style-type: none;
+}
+.list li {
+  margin: 5px;
+  color: black;
+  padding: 5px;
+  border-radius: 5px;
+  box-shadow: 2px 2px 2px black;
+  background-color: rgb(59, 209, 209);
+}
+.list li:hover {
+  background-color: cyan;
+  color: green;
+}
+.select {
+  margin: 5px;
+  padding: 5px;
+  border-radius: 5px;
+  border: 1px solid rgb(72, 218, 72);
+  background: rgb(32, 30, 30);
+  color: rgb(72, 218, 72);
+  outline: none;
 }
