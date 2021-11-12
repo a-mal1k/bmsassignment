@@ -1,6 +1,15 @@
+import $ from "jquery";
+import { useState } from "react";
 const Trailer = () => {
+  const [play, setPlay] = useState(false);
+
   let image =
     "https://www.pngkit.com/png/detail/94-948126_spider-man-flying-spiderman-png.png";
+
+  // if(play){
+  //   $('.play').css('display','block')
+  // }
+
   return (
     <div className="card" style={{ backgroundImage: `url(${image})` }}>
       <div className="inner-card">

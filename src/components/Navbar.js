@@ -1,4 +1,19 @@
+import { useEffect, useState } from "react";
+
 const Navbar = () => {
+  const [arr, setArr] = useState([]);
+  useEffect(() => {
+    fetch("https://peaceful-forest-62260.herokuapp.com/")
+      .then((response) => response.json())
+      .then((data) => {
+        let arr = [];
+        for (let i = 0; i < data.languageList.length; i++) {
+          arr.push(data.languageList[i]);
+        }
+        setArr(arr);
+      });
+  }, []);
+
   return (
     <nav className="navbar">
       <div className="left-nav">
@@ -14,8 +29,11 @@ const Navbar = () => {
           <option value="newest">Newest</option>
         </select>
         <select className="select" name="language" id="language">
-          <option value="English">English</option>
-          <option value="Hindi">Hindi</option>
+          {arr.map((t, index) => (
+            <option value={`${t}`} key={index}>
+              {t}
+            </option>
+          ))}
         </select>
         <select className="select" name="genre" id="genre">
           <option value="allgenre">All Genres</option>

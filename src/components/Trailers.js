@@ -6,10 +6,6 @@ const Trailers = () => {
       <Trailer />
       <Trailer />
       <Trailer />
-      <Trailer />
-      <Trailer />
-      <Trailer />
-      <Trailer />
     </div>
   );
 };

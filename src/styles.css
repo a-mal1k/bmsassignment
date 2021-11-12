@@ -116,3 +116,18 @@
   color: cyan;
   border-color: cyan;
 }
+
+/*Play styling */
+.play {
+  widows: 90vh;
+  height: 50vh;
+  display: none;
+  padding: 3px 3px;
+  margin: 6px;
+  display: flex;
+  justify-content: space-between;
+  box-shadow: 0 0 4px rgba(0, 0, 0, 0.6), 0 3px 6px rgba(0, 0, 0, 0.6);
+  cursor: pointer;
+  transition: 0.3s;
+  border-radius: 5px;
+}
