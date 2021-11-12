@@ -9,6 +9,7 @@
   color: white;
   margin: 2px;
 }
+/* Navbar section */
 .navbar {
   display: flex;
   padding: 10px;
@@ -51,4 +52,67 @@
   background: rgb(32, 30, 30);
   color: rgb(72, 218, 72);
   outline: none;
+}
+/* Trailer Section */
+.trailers {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 30px 10px;
+}
+.card {
+  width: 50vh;
+  height: 70vh;
+  padding: 2px 3px;
+  margin: 6px;
+  background-color: rgb(43, 42, 45);
+  background-size: cover;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  box-shadow: 0 0 4px rgba(0, 0, 0, 0.6), 0 3px 6px rgba(0, 0, 0, 0.6);
+  cursor: pointer;
+  transition: 0.3s;
+  border-radius: 5px;
+}
+.card:hover {
+  transform: scale(1.05);
+}
+.movieName {
+  color: white;
+  background-color: black;
+  border-radius: 5px;
+  width: 100%;
+  text-align: center;
+}
+.inner-card {
+  display: flex;
+  color: black;
+  justify-content: space-between;
+}
+.inner-card p {
+  background-color: rgb(189, 247, 247);
+  box-shadow: 1px 1px 1px black;
+  border-radius: 50%;
+  padding: 10px;
+  margin: 10px;
+}
+.inner-card span {
+  color: green;
+}
+.btn {
+  width: fit-content;
+  border-radius: 50%;
+  align-self: center;
+  padding: 10px;
+  background: transparent;
+  color: white;
+  font-size: xx-large;
+  border: 2px solid white;
+}
+.btn:hover {
+  transform: scale(1.1);
+  color: cyan;
+  border-color: cyan;
 }
