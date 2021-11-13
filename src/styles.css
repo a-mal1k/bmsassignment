@@ -7,7 +7,7 @@
 .container {
   font-family: "Times New Roman", Times, serif;
   color: white;
-  margin: 2px;
+  background-color: rgba(36, 35, 41);
 }
 /* Navbar section */
 .navbar {
@@ -15,6 +15,8 @@
   padding: 10px;
   justify-content: space-between;
   align-items: center;
+  box-shadow: 1px 1px 2px cyan;
+
   background: linear-gradient(45deg, rgb(59, 56, 56), rgb(32, 30, 30));
 }
 .left-nav {
@@ -64,9 +66,9 @@
 .card {
   width: 50vh;
   height: 70vh;
-  padding: 2px 3px;
   margin: 6px;
   background-color: rgb(43, 42, 45);
+  border: 2px solid black;
   background-size: cover;
   display: flex;
   justify-content: space-between;
@@ -77,29 +79,38 @@
   border-radius: 5px;
 }
 .card:hover {
-  transform: scale(1.05);
+  transform: scale(1.01);
 }
 .movieName {
   color: white;
   background-color: black;
-  border-radius: 5px;
   width: 100%;
+  height: 5vh;
+  padding-top: 2px;
   text-align: center;
+  font-family: "Irish Grover", cursive;
 }
 .inner-card {
   display: flex;
   color: black;
+  align-items: center;
   justify-content: space-between;
 }
 .inner-card p {
   background-color: rgb(189, 247, 247);
   box-shadow: 1px 1px 1px black;
-  border-radius: 50%;
-  padding: 10px;
-  margin: 10px;
+  border-radius: 20%;
+  padding: 5px;
+  margin: 5px;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
 }
 .inner-card span {
-  color: green;
+  color: rgb(6, 231, 6);
+  text-shadow: 1px 1px 1px black;
+}
+.inner-card h6 {
+  text-shadow: 1px 1px 1px rgb(6, 231, 6);
 }
 .btn {
   width: fit-content;
