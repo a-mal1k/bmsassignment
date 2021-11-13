@@ -1,14 +1,17 @@
 import $ from "jquery";
 import { useState } from "react";
+import Play from "./Play";
 const Trailer = (props) => {
   const [play, setPlay] = useState(false);
 
   if (play) {
-    $(".play").css("display", "block");
+    $(".playContainer").css("display", "block");
   } else {
-    $(".play").css("display", "none");
+    $(".playContainer").css("display", "none");
   }
-  return (
+  return play ? (
+    <Play url={props.trailerLink} name={props.trailerName} />
+  ) : (
     <div className="card" style={{ backgroundImage: `url(${props.image})` }}>
       <div className="inner-card">
         <p className="date">{props.date}</p>

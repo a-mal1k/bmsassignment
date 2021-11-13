@@ -26,6 +26,7 @@ const Trailers = () => {
           votePer={data.wtsPerc}
           movieName={data.EventTitle}
           trailerLink={data.TrailerURL}
+          trailerName={data.EventURL}
         />
       ))}
     </div>

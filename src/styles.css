@@ -129,9 +129,9 @@
 }
 
 /*Play styling */
-.play {
-  widows: 90vh;
-  height: 50vh;
+.playContainer {
+  widows: 95vh;
+  height: 60vh;
   display: none;
   padding: 3px 3px;
   margin: 6px;
@@ -141,4 +141,9 @@
   cursor: pointer;
   transition: 0.3s;
   border-radius: 5px;
+}
+.play {
+  padding: 3px 3px;
+  margin: 6px;
+  box-shadow: 0 0 4px rgba(0, 0, 0, 0.6), 0 3px 6px rgba(0, 0, 0, 0.6);
 }
