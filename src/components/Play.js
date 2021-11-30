@@ -1,16 +1,22 @@
+import ReactPlayer from "react-player";
+import $ from "jquery";
 const Play = (props) => {
+  const clickHandler = () => {
+    $(".playContainer").css("display", "none");
+  };
   return (
     <div className="playContainer">
-      <div ClassName="play">
-        <iframe
-          title={props.name}
-          width="560"
-          height="315"
-          src={props.url}
-          frameBorder="0"
-          allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-        ></iframe>
-      </div>
+      <ReactPlayer
+        url={props.url}
+        className="react-player"
+        playing
+        width="100%"
+        height="100%"
+        controls={false}
+      />
+      <p className="closeBanner" onClick={clickHandler}>
+        Close
+      </p>
     </div>
   );
 };

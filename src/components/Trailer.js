@@ -10,7 +10,7 @@ const Trailer = (props) => {
     $(".playContainer").css("display", "none");
   }
   return play ? (
-    <Play url={props.trailerLink} name={props.trailerName} />
+    <Play url={props.trailerLink} />
   ) : (
     <div className="card" style={{ backgroundImage: `url(${props.image})` }}>
       <div className="inner-card">
